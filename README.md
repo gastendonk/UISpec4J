@@ -7,8 +7,19 @@ designed to hide as much as possible the complexity of Swing, resulting in easy 
 This is especially true when comparing UISpec4J tests with those produced using Swing or low-level, event-based 
 testing libraries.
 
-This project was forked from the UISpec4J project that can be found [here](https://github.com/UISpec4J/UISpec4J).
+This project was "forked" from the [UISpec4J project](https://github.com/UISpec4J/UISpec4J).
 
-## JDK 17 support
+## Java 17 support
 
-The MASTER branch now include support for JDK 17. All current tests are passing and used by multiple project. 
+The main branch now includes support for Java 17. All current tests are passing and are used by multiple projects.
+
+## How to use
+
+```
+repositories {
+    maven { url 'https://jitpack.io' }
+}
+dependencies {
+    testImplementation 'com.github.gastendonk.uispec4j:uispec4j:2.5-g3'
+}
+```
